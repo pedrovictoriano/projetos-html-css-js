@@ -150,7 +150,6 @@ header .navbar ul li a:hover {
   }
   header .navbar ul li {
     text-align: center;
-    width: 100%;
     margin: 1rem 0;
     border-radius: 0.5rem;
     width: 26rem;
@@ -296,8 +295,8 @@ header .navbar ul li a:hover {
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+  -webkit-moz-transition: all 0.2s linear;
+  -o-moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 .social-icons a:active,
@@ -1174,6 +1173,19 @@ form .button-area {
     transform: scale(1.1);
   }
 }
+
+@-moz-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@-o-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
 @keyframes pound {
   to {
     transform: scale(1.1);
